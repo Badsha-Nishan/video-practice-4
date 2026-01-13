@@ -133,6 +133,48 @@ ul {
   min-width: 500;
   font-size: 4.5rem;
 }
+
+/* Features Section */
+
+.features-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 146px;
+}
+
+.features-section p {
+  max-width: 586px;
+}
+.cards {
+  padding: 32px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.09);
+  max-width: 586px;
+  margin-bottom: 20px;
+}
+.card-head {
+  font-size: 2rem;
+  color: #131313;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feature-img img {
+  width: 100%;
+}
+
+.experience-btn .btn-primary {
+  font-size: 6.4rem;
+  font-weight: bold;
+  margin-top: -100px;
+  margin-left: -100px;
+  line-height: 44px;
+}
+.experience-btn .btn-primary span {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 576px) {
   .head-title {
     font-size: 2.5rem;
@@ -154,6 +196,13 @@ ul {
   }
   .quick-content {
     max-width: 337px;
+  }
+  .features-section {
+    flex-direction: column;
+    gap: 46px;
+  }
+  .cards {
+    max-width: 386px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
