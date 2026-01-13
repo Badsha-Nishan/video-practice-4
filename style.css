@@ -183,7 +183,7 @@ ul {
   gap: 124px;
   justify-content: center;
   margin-top: 100px;
-  margin-bottom: 180px;
+  margin-bottom: 150px;
 }
 
 .facts .para {
@@ -211,6 +211,53 @@ ul {
   font-weight: 500;
   color: #727272;
   margin-top: 10px;
+}
+
+/* Sponsors Section */
+
+.sponsors-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.sponsors-content .para {
+  text-align: center;
+}
+.sponsors-content .para {
+  max-width: 542px;
+}
+
+.sponsors-images img {
+  display: block;
+  filter: grayscale(100%);
+}
+
+.sponsors-images {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+.sponsors-images img {
+  width: 100%;
+  margin-left: 150px;
+  margin-bottom: 130px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #fff4e7;
+  min-height: 100px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+footer .para {
+  text-align: center;
 }
 @media screen and (max-width: 576px) {
   .head-title {
@@ -247,6 +294,67 @@ ul {
     margin-top: 50px;
     margin-bottom: 80px;
   }
+  .sponsors-images {
+    flex-direction: column;
+  }
+  footer .para {
+    padding: 0;
+  }
+  .experience-btn .btn-primary {
+    font-size: 3.4rem;
+    margin-top: -10px;
+    margin-left: -10px;
+    line-height: 29px;
+  }
+  .sponsors-images img {
+    margin-left: 10px;
+  }
 }
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+  .head-title {
+    font-size: 3.5rem;
+  }
+  .nav-link {
+    margin-left: 30px;
+  }
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .quick-section {
+    flex-direction: column;
+  }
+  .align {
+    width: 85%;
+  }
+  .quick-content {
+    max-width: 537px;
+  }
+  .features-section {
+    flex-direction: column;
+  }
+  .cards {
+    max-width: 686px;
+  }
+  .facts-cards-box {
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    gap: 10px;
+  }
+  .sponsors-images {
+    flex-direction: column;
+  }
+  footer .para {
+    padding: 0;
+  }
+  .experience-btn .btn-primary {
+    font-size: 4.4rem;
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+  .sponsors-images img {
+    margin-left: 10px;
+    width: 50%;
+    margin-bottom: 20px;
+  }
 }
